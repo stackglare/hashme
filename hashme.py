@@ -13,6 +13,9 @@ def hash_string(st, hash_alg):
     elif hash_alg == "md5":
         hashobj = hashlib.md5(bytes(st, "utf-8"))
         return hashobj
+    elif hash_alg == "md4":
+        hashobj = hashlib.md4(bytes(st, "utf-8"))
+        return hashobj
     else:
         return False
 
